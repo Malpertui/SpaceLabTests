@@ -1,5 +1,8 @@
-x=[100,3,65]
-numbers_list_int=x
+
+numbers_list_int=[]
+for i in range(3):
+    number=int(input('Введіть число: '))
+    numbers_list_int.append(number)
 # numbers_list = list(input("Введіть 3 числа: " ))
 # numbers_list_int = []
 # for i in range(len(numbers_list)):
