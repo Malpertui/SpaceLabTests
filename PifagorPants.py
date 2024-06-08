@@ -1,4 +1,4 @@
-x=[100,3,65]
+x=[4,3,5]
 numbers_list_int=x
 # numbers_list = list(input("Введіть 3 числа: " ))
 # numbers_list_int = []
@@ -24,6 +24,6 @@ numbers_list_final.append(max_number)
     
 
 if numbers_list_final[0]**2 + numbers_list_final[1]**2 == numbers_list_final[2]**2:
-    print("True")
+    print(True)
 else:
-    print('False')
+    print(False)
