@@ -1,0 +1,72 @@
+from datetime import datetime, timedelta
+# Define start and end dates
+start_date = datetime(2020, 1, 30)
+start_date_clone = start_date
+all_days = 5
+work_days = 2
+rest_days=1
+end_date = start_date + timedelta(days=all_days-1)
+print(f'ЕндДейт внизу {end_date}')
+ 
+# Initialize an empty list
+date_list = []
+# date_list.append(start_date)
+date_list_rest_days = []
+
+ 
+# Loop through the range of dates and append to the list
+# print(f'Вихідні {start_date + timedelta(days=1*work_days)}')
+# i =0
+
+# no_no_number = 1
+# while start_date < end_date:
+#     i+=1
+#     start_date += timedelta(days=1)
+#     no_no_date = start_date_clone + timedelta(days=i*work_days)
+#     if start_date == no_no_date:
+#         continue
+#     # if start_date == start_date + timedelta(days=i*work_days):
+#     #     continue
+#     # if i == 3:
+#     #     continue
+#     # no_no_number = i*work_days
+#     # if i == work_days:
+#     #     continue
+#     else:
+#         date_list.append(start_date)
+    
+
+
+#     print(i)
+#     print(start_date)
+#     # print(date_list)
+#     # i+=1
+
+# print(date_list)
+print(f'Клон стартДейт {start_date_clone}')
+# i=0
+while start_date_clone < end_date:
+    start_date_clone += timedelta(days=work_days+1)
+    date_list_rest_days.append(start_date_clone)
+    print(start_date_clone)
+    print(f'ЕндДейт внизу{end_date}')
+    # i+=1
+    if start_date_clone == end_date:
+        break
+
+
+print(f'Тільки вихідні {date_list_rest_days}')
+
+if start_date_clone > end_date:
+    print('Больше')
+
+    
+
+
+
+
+
+
+ 
+# Print the list of dates
+# print(date_list)
